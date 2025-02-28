@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 ecommerce/myenv/
+=======
+ecommerce/myenv
+ecommerce/ecommerce/store/__pycache__
+ecommerce/store/__pycache__
+>>>>>>> rumon

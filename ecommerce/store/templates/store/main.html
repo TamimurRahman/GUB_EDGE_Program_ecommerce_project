@@ -46,7 +46,7 @@
           var cookiePair = cookieArr[i].split("=");
 
           /* Removing whitespace at the beginning of the cookie name
-		        and compare it with the given string */
+					and compare it with the given string */
           if (name == cookiePair[0].trim()) {
             // Decode the cookie value and return
             return decodeURIComponent(cookiePair[1]);
@@ -98,7 +98,7 @@
                 src="{% static 'images/cart.png' %}"
                 alt="Cart"
               />
-              <p id="cart-total">0</p>
+              <p id="cart-total">{{cartItems}}</p>
             </a>
           </div>
         </div>
@@ -112,5 +112,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="{% static 'js/cart.js' %}"></script>
   </body>
 </html>
